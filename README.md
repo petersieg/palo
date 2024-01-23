@@ -29,7 +29,7 @@ $ DEBUG=1 OPTIMIZE=0 make
 
 # par
 
-A tool for handling disk images:
+A tool for handling alto disk images:
 
 ```Usage:
  ./par [options] disk1
