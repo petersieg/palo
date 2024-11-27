@@ -61,3 +61,20 @@ filesystem checked: 35 free pages
 inserted `/Users/ich/Downloads/test/hello.bcpl` as `hello.bcpl` successfully
 saving disk image `/Users/ich/Downloads/test/allgames.dsk`
 ```
+
+# adar
+
+```void usage(const char *prog_name)
+{
+    printf("Usage:\n");
+    printf(" %s [options] [dir/file] disk\n", prog_name);
+    printf("where:\n");
+    printf("  -l            Lists all files in the filesystem\n");
+    printf("  -d dirname    Lists the contents of a directory\n");
+    printf("  -e filename   Extracts a given file\n");
+    printf("  -r filename   Replaces a given file\n");
+    printf("  -s            Scavenges files instead of finding them\n");
+    printf("  -v            Increase verbosity\n");
+    printf("  --help        Print this help\n");
+}
+```
