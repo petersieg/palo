@@ -1,6 +1,6 @@
 # Hints:
 
-par+pmu.exe and adar.exe are compiled unter W11 with mingw64. palos.exe is compiled with cygwin64 - needed dlls are included.
+par+pmu.exe and adar.exe are compiled under W11 with mingw64. palos.exe is compiled with cygwin64 - needed dlls are included.
 (Reason is, that palos uses BSD sockets, which are not available in mingw64, but are available under cygwin64)
 
 All other executables are compiled with gcc under MacOS Sonoma and homebrew using sdl2.
