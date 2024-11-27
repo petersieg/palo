@@ -1,5 +1,5 @@
 #!/bin/sh
-cd $HOME/alto/src/palo
-./palos ../../disks/allgames.dsk
+cd $HOME/palo
+./palos disks/allgames.dsk
 
 
