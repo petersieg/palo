@@ -1,2 +1,2 @@
-cd c:\Users\User\alto\palo\src
-palos.exe ..\..\disks\allgames.dsk
+cd c:\Users\User\palo
+palos.exe disks\allgames.dsk
