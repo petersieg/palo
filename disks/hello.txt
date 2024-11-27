@@ -1,0 +1,48 @@
+Type bravo to start the Bravo text editor. Press i (for insert). Enter the BCPL program:
+
+// Hello world demo
+get "streams.d"
+external
+[
+Ws
+]
+
+let Main() be
+[
+Ws("Hello World!*N")
+]
+
+Press ESC to exit insert mode.
+Press p (put) to save the file.
+Type hello.bcpl (the file name) and press ESC (not enter!).
+Press q then ENTER to quit the editor.
+
+Run the BCPL compiler, the linker, and the executable by entering the following commands at the prompt:
+
+bcpl hello.bcpl
+bldr/d/l/v hello
+hello
+
+If all goes well, the program will print "Hello World!" Congratulations, you've run a BCPL program. 
+
+---
+
+The BCPL language
+The BCPL language is interesting because it was the grandparent of C. BCPL (Basic Combined Programming Language) was developed in 1966. The B language was developed in 1969 as a stripped down version of BCPL by Ken Thompson and Dennis Ritchie. With the introduction of the PDP-11, system software needed multiple datatypes, resulting in the development of the C language around 1972.
+
+Overall, BCPL is like a primitive version of C with weirdly different syntax. The only type that BCPL supports is the 16-bit word, so it doesn't use type declarations. BCPL does support supports C-like structs and unions, including structs that can access bit fields from a word. (This is very useful for the low-level systems programming tasks that BCPL was designed for.) BCPL also has blocks and scoping rules like C, pointers along with lvalues and rvalues, and C-like looping constructs.
+
+A BCPL program looks strange to a C programmer because many of the special characters are different and BCPL often uses words instead of special characters. Here are some differences:
+
+Blocks are defined with [...] rather than {...}.
+For array indexing, BCPL uses a!b instead of a[b].
+BCPL uses resultis 42 instead of return 42.
+Semicolons are optional, kind of like JavaScript.
+For pointers, BCPL uses lv and rv (lvalue and rvalue) instead of & and *. rvalues.
+The BCPL operator => (known as "heffalump"; I'm not making this up) is used for indirect structure references instead of C's ->.
+selecton X into, instead of C's switch, but cases are very similar with fall-throughs and default.
+lshift and rshift instead of << and >>.
+eq, ne, ls, le, gr, ge in place of ==, !=, <, <=, >, >=.
+test / ifso / ifnot instead of if / else.
+
+A BCPL reference manual is here if you want all the details of BCPL. 
