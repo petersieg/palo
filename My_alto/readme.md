@@ -10,3 +10,6 @@ Mit switchregX die Auflösung auf 600x800 einstellen.
 
 Alto/palos als Emulator.
 
+![my_alto_1]my_alto_1.jpeg
+
+![my_alto_2]my_alto_2.jpeg
