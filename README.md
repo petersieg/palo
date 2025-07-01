@@ -5,6 +5,14 @@ par+pmu.exe and adar.exe are compiled under W11 with mingw64. palos.exe is compi
 
 All other executables are compiled with gcc under MacOS Sonoma and homebrew using sdl2.
 
+# DMG
+Compiled under Big Sur.
+Build App from information given here: https://stackoverflow.com/questions/1596945/building-osx-app-bundle
+and using this tool: https://github.com/auriamg/macdylibbundler
+icon tool used: https://github.com/BenSouchet/png-to-icns
+DMG build with hdd tool from directory
+Runs also under Sonoma. Expected to run fom Big Sur upto ..
+
 # palo
 
 ## Synopsis
